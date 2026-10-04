@@ -136,7 +136,8 @@ ol, ul { margin: 0; padding: 0; }
 
 /* ---------- Week timetable ---------- */
 .week { display: grid; gap: .9rem; }
-.day { display: grid; grid-template-columns: 96px 1fr 1fr; gap: .75rem; align-items: start; }
+.day { display: grid; grid-template-columns: 96px 1fr; gap: .75rem; align-items: start; }
+.meal-pair { display: grid; gap: .75rem; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
 .day-name { font-size: 1.15rem; padding-top: .35rem; }
 .day-date { display: block; font-family: var(--body); font-weight: 500; font-size: .85rem; color: var(--muted); }
 .day-today { display: inline-block; margin-top: .25rem; background: var(--sticker); color: var(--sticker-ink); font-size: .75rem; font-weight: 600; padding: .05rem .5rem; border-radius: 6px; }
@@ -159,10 +160,7 @@ details ol { margin-top: .4rem; padding-left: 1.2rem; display: grid; gap: .35rem
 @media (max-width: 760px) {
   .day { grid-template-columns: 1fr; gap: .5rem; }
   .day-name { display: flex; align-items: baseline; gap: .6rem; padding: .4rem 0 0; }
-  .meal-pair { display: grid; gap: .5rem; }
-}
-@media (min-width: 761px) {
-  .meal-pair { display: contents; }
+  .meal-pair { gap: .5rem; }
 }
 
 /* ---------- Receipt (shopping list) ---------- */
