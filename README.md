@@ -19,6 +19,7 @@ See the same plan priced at all five supermarkets
 A "Use it up" tab where you tick what's left in the fridge and it suggests meals that use it
 Mark meals as cooked and it works out what you've saved compared with a takeaway (I've set that to £8 for lunch or dinner and £4 for breakfast, but you can change both)
 Copy or print the shopping list
+
 Rough edges
 
 The prices are estimates, not live supermarket prices. I set what I could from published 2026 figures (Aldi price announcements, Which? and a couple of price trackers) and guessed the rest. They're at the top of app.js if you want to correct them. The gap between supermarkets is a compromise too: Which? has Aldi about 17% cheaper than Tesco on a big mixed basket but only about 3% on basic own-brand items, so I've set Aldi about 8% below.
