@@ -377,6 +377,18 @@
   var app = document.getElementById('app');
   var toastEl = document.getElementById('toast');
 
+  // The week layout rules are also set here, not just in style.css, so the three-meal rows
+  // still line up if a browser is holding on to an older copy of the stylesheet.
+  (function () {
+    var st = document.createElement('style');
+    st.id = 'week-layout';
+    st.textContent =
+      '.day{display:grid;grid-template-columns:96px 1fr;gap:.75rem;align-items:start}' +
+      '.meal-pair{display:grid;gap:.75rem;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}' +
+      '@media (max-width:760px){.day{grid-template-columns:1fr;gap:.5rem}.meal-pair{gap:.5rem}}';
+    document.head.appendChild(st);
+  })();
+
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
       return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
