@@ -1,5 +1,3 @@
-# student-meal-planner
-apatel555.github.io/student-meal-planner
 Student Meal Planner
 
 A small web app that plans a week of breakfasts, lunches and dinners on a student budget and gives you one shopping list to go with it.
@@ -10,7 +8,7 @@ Most meal planning apps assume you have a full kitchen and a normal food budget.
 
 How it works
 
-You answer four questions: your weekly budget and supermarket (Aldi, Lidl, Asda, Tesco or Sainsbury's), your diet and any allergies, what kitchen you have and how well you cook, and what's already in your cupboard. It then picks 21 meals, breakfast, lunch and dinner for each day, and adds everything up into a single list.
+You answer four questions: your weekly budget and supermarket (Aldi, Lidl, Asda, Tesco or Sainsbury's), your diet and any allergies, what kitchen you have (microwave only, hob, or oven, and whether you also have an air fryer) and how well you cook, and what's already in your cupboard. It then picks 21 meals, breakfast, lunch and dinner for each day, and adds everything up into a single list.
 
 Other bits:
 
